@@ -449,6 +449,12 @@ Every Space Bat that passes the rocketship gives us one point.
      | Looks    | "switch backdrop to [Stars End]" |
      | Control  | "stop [all]"                     |
 
+   - Add an "show" block in the first "when green flag clicked" event block.
+
+     | Category | Block  |
+     | -------- | ------ |
+     | Looks    | "show" |
+
    ![Add the screens 3](./images/screenshot_screens_6.webp)
 
 ### Add a Space Donut
@@ -468,31 +474,38 @@ Every Space Bat that passes the rocketship gives us one point.
 
    Add the following blocks:
 
-   | Category  | Block                              |
-   | --------- | ---------------------------------- |
-   | Control   | "when I start as a clone"          |
-   | Motion    | "set x to (250)"                   |
-   | Motion    | "set y to ( )"                     |
-   | Operators | "pick random (-140) to (140)"      |
-   | Looks     | "show"                             |
-   | Motion    | "glide (10) secs to x:(-250) y:()" |
-   | Motion    | "y position"                       |
-   | Control   | "delete this clone"                |
+   - Movement:
 
-   | Category | Block                               |
-   | -------- | ----------------------------------- |
-   | Control  | "when I start as a clone"           |
-   | Control  | "forever"                           |
-   | Control  | "if < > then"                       |
-   | Sensing  | "touching [Rocketship] ?"           |
-   | Events   | "broadcast (Space Donut collected)" |
-   | Control  | "delete this clone"                 |
+     | Category  | Block                              |
+     | --------- | ---------------------------------- |
+     | Control   | "when I start as a clone"          |
+     | Motion    | "set x to (250)"                   |
+     | Motion    | "set y to ( )"                     |
+     | Operators | "pick random (-140) to (140)"      |
+     | Looks     | "show"                             |
+     | Motion    | "glide (10) secs to x:(-250) y:()" |
+     | Motion    | "y position"                       |
+     | Control   | "delete this clone"                |
 
-   | Category | Block                 |
-   | -------- | --------------------- |
-   | Control  | "forever"             |
-   | Control  | "wait (0.25) seconds" |
-   | Looks    | "next costume"        |
+   - Collision:
+
+     | Category | Block                               |
+     | -------- | ----------------------------------- |
+     | Control  | "when I start as a clone"           |
+     | Control  | "forever"                           |
+     | Control  | "if < > then"                       |
+     | Sensing  | "touching [Rocketship] ?"           |
+     | Events   | "broadcast (Space Donut collected)" |
+     | Control  | "delete this clone"                 |
+
+   - Rotation:
+
+     | Category | Block                     |
+     | -------- | ------------------------- |
+     | Control  | "when I start as a clone" |
+     | Control  | "forever"                 |
+     | Control  | "wait (0.1) seconds"      |
+     | Motion   | "turn right (10) degrees" |
 
    ![Add Space Donut 1](./images/screenshot_space-donut_1.webp)
 

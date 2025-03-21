@@ -59,7 +59,7 @@ This is a tutorial for creating a Space Bats game in
 
    ![Create the stars backdrop](./images/screenshot_background_2.webp)
 
-3. Name the new created backdrop "Space" and draw a small gray filled rectangle
+3. Name the new created backdrop "Stars" and draw a small gray filled rectangle
    at the bottom to show there is a planet nearby.
 
    ![Draw a small gray filled rectangle](./images/screenshot_background_3.webp)
@@ -396,7 +396,8 @@ Every Space Bat that passes the rocketship gives us one point.
    - Set a blue color.
    - Select the "Pixel" font.
    - Add the Text: `Press >> SPACE << to start and fly!`
-   - Set a larger size and a centered position.
+   - Set a larger size and a centered position. (Click on the select button
+     (Arrow) and the size and position of the selected text can be adjusted.)
    - Set a red color.
    - Add the Text: `Avoid the space bats and do not crash!`
    - Set a smaller size and a centered position.
@@ -456,6 +457,15 @@ Every Space Bat that passes the rocketship gives us one point.
      | Looks    | "show" |
 
    ![Add the screens 3](./images/screenshot_screens_6.webp)
+
+6. In the Code tab of the "Space Bat" sprite, replace the "stop [all]" control
+   block with an "broadcast (Spaceship destroyed)" event block.
+
+   | Category | Block                             |
+   | -------- | --------------------------------- |
+   | Events   | "broadcast (Spaceship destroyed)" |
+
+   ![Add the screens 4](./images/screenshot_screens_7.webp)
 
 ### Add a Space Donut
 

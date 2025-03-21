@@ -1,6 +1,6 @@
-# Space Bats
+# Catch Grades
 
-![Space Bats](./images/catch-grades.webp)
+![Catch Grades](./images/catch-grades.webp)
 
 Ein kleines Spiel in [Scratch](https://scratch.mit.edu/) mit einer
 Schritt-für-Schritt-Anleitung.

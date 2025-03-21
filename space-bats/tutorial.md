@@ -443,12 +443,12 @@ Every Space Bat that passes the rocketship gives us one point.
      destroyed)" event block.
    - Add the following blocks:
 
-     | Category | Block                            |
-     | -------- | -------------------------------- |
-     | Events   | "when I receive [Game started]"  |
-     | Looks    | "hide"                           |
-     | Looks    | "switch backdrop to [Stars End]" |
-     | Control  | "stop [all]"                     |
+     | Category | Block                                   |
+     | -------- | --------------------------------------- |
+     | Events   | "when I receive [Rocketship destroyed]" |
+     | Looks    | "hide"                                  |
+     | Looks    | "switch backdrop to [Stars End]"        |
+     | Control  | "stop [all]"                            |
 
    - Add an "show" block in the first "when green flag clicked" event block.
 
